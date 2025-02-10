@@ -1,13 +1,15 @@
-# Sample Hardhat Project
+# USDT Smart Contract Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+USDT (ERC-20) smart contract 
 
-Try running some of the following tasks:
+To start the project in localhost:
 
+1- make sure ganache-cli is running:
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
+ganache-cli -d
+```
+2- start usdt smart contranct project:
+```shell
+npx hardhat compile
+npx hardhat run scripts/deploy.ts --network localhost
 ```
